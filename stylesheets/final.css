@@ -304,38 +304,42 @@ textarea.form-control {
   body .title-add {
     font-size: 2em;
   }
-  /* line 187, ../sass/final.scss */
+  /* line 189, ../sass/final.scss */
+  body header nav button {
+    display: none;
+  }
+  /* line 194, ../sass/final.scss */
   body header h2 {
     font-size: 4em;
   }
-  /* line 191, ../sass/final.scss */
+  /* line 199, ../sass/final.scss */
   body nav ul.navbar {
     display: block;
   }
-  /* line 194, ../sass/final.scss */
+  /* line 202, ../sass/final.scss */
   body nav ul.navbar li a {
     color: #fff;
   }
-  /* line 200, ../sass/final.scss */
+  /* line 208, ../sass/final.scss */
   body div.indexfirst section > div {
     background-color: #444;
     margin-bottom: 30px;
   }
-  /* line 205, ../sass/final.scss */
+  /* line 213, ../sass/final.scss */
   body div.indexfirst aside:first-of-type {
     margin-bottom: 1em;
   }
-  /* line 206, ../sass/final.scss */
+  /* line 214, ../sass/final.scss */
   body div.indexfirst aside:first-of-type ul.navbar {
     display: block;
     width: 100%;
   }
-  /* line 209, ../sass/final.scss */
+  /* line 217, ../sass/final.scss */
   body div.indexfirst aside:first-of-type ul.navbar li {
     display: inline-block;
     width: 50%;
   }
-  /* line 218, ../sass/final.scss */
+  /* line 226, ../sass/final.scss */
   body section.indexsecond div {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -348,7 +352,7 @@ textarea.form-control {
     /*background-color: #525252;*/
     margin-bottom: 0.8em;
   }
-  /* line 223, ../sass/final.scss */
+  /* line 231, ../sass/final.scss */
   body section.indexsecond div img {
     max-width: 100%;
     /*70%*/
@@ -361,7 +365,7 @@ textarea.form-control {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 227, ../sass/final.scss */
+  /* line 235, ../sass/final.scss */
   body section.indexsecond div div {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -374,7 +378,7 @@ textarea.form-control {
     font-size: 1.3em;
   }
 
-  /* line 234, ../sass/final.scss */
+  /* line 242, ../sass/final.scss */
   .price {
     padding: 0.5em;
     font-size: 1em;
@@ -382,35 +386,35 @@ textarea.form-control {
     /*margin-top: 100%;*/
   }
 
-  /* line 241, ../sass/final.scss */
+  /* line 249, ../sass/final.scss */
   body nav ul.navbar {
     display: block;
     width: 100%;
     background-color: transparent;
   }
-  /* line 246, ../sass/final.scss */
+  /* line 254, ../sass/final.scss */
   body nav ul.navbar li {
     background-color: transparent;
     color: #fff;
   }
-  /* line 249, ../sass/final.scss */
+  /* line 257, ../sass/final.scss */
   body nav ul.navbar li:hover {
     background-color: transparent;
   }
-  /* line 252, ../sass/final.scss */
+  /* line 260, ../sass/final.scss */
   body nav ul.navbar li a {
     color: #fff;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     font-weight: bold;
   }
-  /* line 257, ../sass/final.scss */
+  /* line 265, ../sass/final.scss */
   body nav ul.navbar li a:hover {
     /*border-left: solid 2px;*/
     background-color: #8ce0c4;
   }
 
-  /* line 264, ../sass/final.scss */
+  /* line 272, ../sass/final.scss */
   section.add h4 {
     font-size: 1.5em;
   }
@@ -420,19 +424,19 @@ textarea.form-control {
 \*---------------------- */
 @media screen and (min-width: 1024px) {
   /*width: 100%; margin: auto; margin-bottom: 0.5em;*/
-  /* line 278, ../sass/final.scss */
+  /* line 286, ../sass/final.scss */
   body header .title-add {
     font-size: 2em;
   }
-  /* line 282, ../sass/final.scss */
+  /* line 290, ../sass/final.scss */
   body header h2 {
     font-size: 4em;
   }
-  /* line 286, ../sass/final.scss */
+  /* line 294, ../sass/final.scss */
   body header nav button {
     display: none;
   }
-  /* line 292, ../sass/final.scss */
+  /* line 300, ../sass/final.scss */
   body div.indexfirst section:first-of-type {
     display: block;
     margin-bottom: 0.5em;
@@ -446,7 +450,7 @@ textarea.form-control {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
     /*background-color: */
   }
-  /* line 298, ../sass/final.scss */
+  /* line 306, ../sass/final.scss */
   body div.indexfirst section:first-of-type div {
     /*taille d'une colonne*/
     width: 99%;
@@ -457,7 +461,7 @@ textarea.form-control {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 300, ../sass/final.scss */
+  /* line 308, ../sass/final.scss */
   body div.indexfirst section:first-of-type div div {
     /*taille d'une colonne*/
     width: 75%;
@@ -468,7 +472,7 @@ textarea.form-control {
     margin: 0 0;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 303, ../sass/final.scss */
+  /* line 311, ../sass/final.scss */
   body div.indexfirst section:first-of-type div img {
     /*max-width: 20%;*/
     /*taille d'une colonne*/
@@ -480,7 +484,7 @@ textarea.form-control {
     margin: 0 0;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 310, ../sass/final.scss */
+  /* line 318, ../sass/final.scss */
   body div.indexfirst aside:first-of-type {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -491,23 +495,23 @@ textarea.form-control {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 312, ../sass/final.scss */
+  /* line 320, ../sass/final.scss */
   body div.indexfirst aside:first-of-type ul.navbar {
     display: block;
     width: 100%;
   }
-  /* line 315, ../sass/final.scss */
+  /* line 323, ../sass/final.scss */
   body div.indexfirst aside:first-of-type ul.navbar li {
     display: inline-block;
     width: 100%;
   }
-  /* line 321, ../sass/final.scss */
+  /* line 329, ../sass/final.scss */
   body section.indexsecond {
     /*&.row{
     	width: 80%;
     }*/
   }
-  /* line 326, ../sass/final.scss */
+  /* line 334, ../sass/final.scss */
   body section.indexsecond div.annonce {
     /*taille d'une colonne*/
     width: 19.0%;
@@ -520,7 +524,7 @@ textarea.form-control {
     /*background-color: #525252;*/
     margin-bottom: 0.8em;
   }
-  /* line 331, ../sass/final.scss */
+  /* line 339, ../sass/final.scss */
   body section.indexsecond div.annonce img {
     max-width: 100%;
     /*70%*/
@@ -533,7 +537,7 @@ textarea.form-control {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 335, ../sass/final.scss */
+  /* line 343, ../sass/final.scss */
   body section.indexsecond div.annonce div {
     /*taille d'une colonne*/
     width: 99%;
@@ -545,12 +549,12 @@ textarea.form-control {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
 
-  /* line 341, ../sass/final.scss */
+  /* line 349, ../sass/final.scss */
   section.add h4 {
     margin-left: 5%;
   }
 
-  /* line 345, ../sass/final.scss */
+  /* line 353, ../sass/final.scss */
   .info_login .form-horizontal div:first-child {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -562,7 +566,7 @@ textarea.form-control {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
 
-  /* line 349, ../sass/final.scss */
+  /* line 357, ../sass/final.scss */
   .info_login .form-horizontal div:nth-child(2) {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -574,7 +578,7 @@ textarea.form-control {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
 
-  /* line 353, ../sass/final.scss */
+  /* line 361, ../sass/final.scss */
   .info_login .form-horizontal div:last-child {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -586,7 +590,7 @@ textarea.form-control {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
 
-  /* line 357, ../sass/final.scss */
+  /* line 365, ../sass/final.scss */
   .rowVale {
     margin: auto;
     width: 90%;
@@ -604,7 +608,7 @@ textarea.form-control {
     display: table;
     clear: both;
   }
-  /* line 363, ../sass/final.scss */
+  /* line 371, ../sass/final.scss */
   .rowVale .info_article, .rowVale .info_annonceur {
     /*taille d'une colonne*/
     width: 49%;
@@ -617,10 +621,10 @@ textarea.form-control {
   }
 }
 /***************** pages rechercher ************************/
-/* line 374, ../sass/final.scss */
+/* line 382, ../sass/final.scss */
 section.recherche h4 {
   background-color: #525252;
-  width: 18em;
+  width: 8em;
   padding-top: 1%;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -628,41 +632,41 @@ section.recherche h4 {
   color: #f7483b;
   font-size: 1.1em;
 }
-/* line 385, ../sass/final.scss */
+/* line 393, ../sass/final.scss */
 section.recherche article {
   background-color: #525252;
   margin-bottom: 5em;
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 394, ../sass/final.scss */
+/* line 402, ../sass/final.scss */
 section.recherche input[type="range"] {
   position: relative;
 }
-/* line 398, ../sass/final.scss */
+/* line 406, ../sass/final.scss */
 section.recherche input[type="range"]:after,
 section.recherche input[type="range"]:before {
   position: absolute;
   top: 1.5em;
   color: #aaa;
 }
-/* line 405, ../sass/final.scss */
+/* line 413, ../sass/final.scss */
 section.recherche input[type="range"]:before {
   left: 0em;
   content: attr(min);
 }
-/* line 410, ../sass/final.scss */
+/* line 418, ../sass/final.scss */
 section.recherche input[type="range"]:after {
   right: 0em;
   content: attr(max);
 }
-/* line 415, ../sass/final.scss */
+/* line 423, ../sass/final.scss */
 section.recherche #outputrange {
   position: relative;
   margin-left: 50%;
 }
 
-/* line 423, ../sass/final.scss */
+/* line 431, ../sass/final.scss */
 section.result-recherche article div {
   /*taille d'une colonne*/
   width: 99%;
@@ -675,7 +679,7 @@ section.result-recherche article div {
   background-color: #525252;
   margin-bottom: 0.3em;
 }
-/* line 428, ../sass/final.scss */
+/* line 436, ../sass/final.scss */
 section.result-recherche article div img {
   max-width: 100%;
   /*70%*/
@@ -688,7 +692,7 @@ section.result-recherche article div img {
   margin: 0 0.5%;
   /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
 }
-/* line 433, ../sass/final.scss */
+/* line 441, ../sass/final.scss */
 section.result-recherche article div div {
   /*taille d'une colonne*/
   width: 32.33333%;
@@ -699,39 +703,38 @@ section.result-recherche article div div {
   margin: 0 0.5%;
   /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
 }
-/* line 436, ../sass/final.scss */
+/* line 444, ../sass/final.scss */
 section.result-recherche article div div a {
   text-decoration: none;
   color: black;
   /*margin-bottom: 2em;*/
 }
-/* line 444, ../sass/final.scss */
+/* line 452, ../sass/final.scss */
 section.result-recherche article div p.description {
   display: none;
 }
-/* line 449, ../sass/final.scss */
+/* line 457, ../sass/final.scss */
 section.result-recherche article a {
   text-decoration: none;
 }
-/* line 454, ../sass/final.scss */
+/* line 462, ../sass/final.scss */
 section.result-recherche article h6.titleAnnonce {
   text-decoration: none;
   color: black;
   padding-bottom: 1em;
-  width: 10px;
 }
-/* line 463, ../sass/final.scss */
+/* line 470, ../sass/final.scss */
 section.result-recherche .annonce {
   padding: 3%;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 470, ../sass/final.scss */
+  /* line 477, ../sass/final.scss */
   section.recherche h4 {
     font-size: 1.3em;
   }
 
-  /* line 475, ../sass/final.scss */
+  /* line 482, ../sass/final.scss */
   section.result-recherche article div {
     /*taille d'une colonne*/
     width: 24%;
@@ -743,8 +746,9 @@ section.result-recherche .annonce {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
     background-color: #525252;
     margin-bottom: 0.8em;
+    min-height: 6em;
   }
-  /* line 480, ../sass/final.scss */
+  /* line 488, ../sass/final.scss */
   section.result-recherche article div img {
     max-width: 100%;
     /*70%*/
@@ -757,10 +761,10 @@ section.result-recherche .annonce {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 484, ../sass/final.scss */
+  /* line 493, ../sass/final.scss */
   section.result-recherche article div div {
     /*taille d'une colonne*/
-    width: 32.33333%;
+    width: 99%;
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -768,13 +772,13 @@ section.result-recherche .annonce {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 489, ../sass/final.scss */
+  /* line 498, ../sass/final.scss */
   section.result-recherche article h6.titleAnnonce {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 499, ../sass/final.scss */
+  /* line 508, ../sass/final.scss */
   section.recherche {
     /*taille d'une colonne*/
     width: 32.33333%;
@@ -785,13 +789,13 @@ section.result-recherche .annonce {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 503, ../sass/final.scss */
+  /* line 512, ../sass/final.scss */
   section.recherche h4 {
     margin-left: 5%;
     font-size: 1.5em;
   }
 
-  /* line 509, ../sass/final.scss */
+  /* line 518, ../sass/final.scss */
   section.result-recherche {
     /*taille d'une colonne*/
     width: 65.66667%;
@@ -802,7 +806,7 @@ section.result-recherche .annonce {
     margin: 0 0.5%;
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
   }
-  /* line 512, ../sass/final.scss */
+  /* line 521, ../sass/final.scss */
   section.result-recherche article div {
     /*taille d'une colonne*/
     width: 99%;
@@ -814,26 +818,40 @@ section.result-recherche .annonce {
     /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
     margin-bottom: 3%;
   }
-  /* line 516, ../sass/final.scss */
+  /* line 525, ../sass/final.scss */
   section.result-recherche article div img {
     max-width: 20%;
   }
-  /* line 520, ../sass/final.scss */
+  /* line 530, ../sass/final.scss */
+  section.result-recherche article div div {
+    /*taille d'une colonne*/
+    width: 32.33333%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+    float: none;
+  }
+  /* line 536, ../sass/final.scss */
   section.result-recherche article div p.description {
     display: block;
-    margin-top: 3em;
-    padding-left: 10em;
+    /*margin-top: 3em;*/
+    /*
+                            padding-left: 10em;
+    */
     text-align: justify;
   }
-  /* line 528, ../sass/final.scss */
+  /* line 546, ../sass/final.scss */
   section.result-recherche article h6.titleAnnonce {
     font-size: 1.3em;
   }
 }
 /***************** fin pages rechercher ************************/
 /***************** pages annonce ************************/
-/* line 543, ../sass/final.scss */
-section.annonce img {
+/* line 561, ../sass/final.scss */
+section.annonces img {
   /*taille d'une colonne*/
   width: 82.33333%;
   float: left;
@@ -846,24 +864,24 @@ section.annonce img {
   margin-right: 5%;
   margin-top: 2em;
 }
-/* line 550, ../sass/final.scss */
-section.annonce a {
+/* line 568, ../sass/final.scss */
+section.annonces a {
   text-decoration: none;
 }
-/* line 554, ../sass/final.scss */
-section.annonce h6.titleAnnonce {
+/* line 572, ../sass/final.scss */
+section.annonces h6.titleAnnonce {
   text-decoration: none;
   color: black;
   padding-top: 1em;
 }
-/* line 560, ../sass/final.scss */
-section.annonce h6.titleCategorie {
+/* line 578, ../sass/final.scss */
+section.annonces h6.titleCategorie {
   font-size: 0.9em;
   color: black;
   padding-top: 1em;
 }
-/* line 566, ../sass/final.scss */
-section.annonce h4 {
+/* line 584, ../sass/final.scss */
+section.annonces h4 {
   background-color: #525252;
   width: 18em;
   padding-top: 1%;
@@ -873,21 +891,21 @@ section.annonce h4 {
   color: #f7483b;
   font-size: 1.1em;
 }
-/* line 577, ../sass/final.scss */
-section.annonce article {
+/* line 595, ../sass/final.scss */
+section.annonces article {
   /*@include column(12,12);*/
   background-color: #525252;
   margin-bottom: 3em;
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 585, ../sass/final.scss */
-section.annonce ul {
+/* line 603, ../sass/final.scss */
+section.annonces ul {
   margin: 0;
   font-size: 1em;
 }
-/* line 590, ../sass/final.scss */
-section.annonce p {
+/* line 608, ../sass/final.scss */
+section.annonces p {
   /*taille d'une colonne*/
   width: 99%;
   float: left;
@@ -901,14 +919,14 @@ section.annonce p {
   margin-bottom: 6%;
   font-size: 1em;
 }
-/* line 598, ../sass/final.scss */
-section.annonce .vignette {
+/* line 616, ../sass/final.scss */
+section.annonces .vignette {
   display: none;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 607, ../sass/final.scss */
-  section.annonce img {
+  /* line 625, ../sass/final.scss */
+  section.annonces img {
     /*taille d'une colonne*/
     width: 32.33333%;
     float: left;
@@ -922,22 +940,22 @@ section.annonce .vignette {
     margin-top: 2em;
     float: right;
   }
-  /* line 615, ../sass/final.scss */
-  section.annonce h6.titleAnnonce {
+  /* line 633, ../sass/final.scss */
+  section.annonces h6.titleAnnonce {
     padding-top: 1em;
     font-size: 1.1em;
   }
-  /* line 620, ../sass/final.scss */
-  section.annonce h6.titleCategorie {
+  /* line 638, ../sass/final.scss */
+  section.annonces h6.titleCategorie {
     font-size: 1em;
   }
-  /* line 624, ../sass/final.scss */
-  section.annonce ul {
+  /* line 642, ../sass/final.scss */
+  section.annonces ul {
     margin: 0;
     font-size: 1.2em;
   }
-  /* line 629, ../sass/final.scss */
-  section.annonce p {
+  /* line 647, ../sass/final.scss */
+  section.annonces p {
     /*taille d'une colonne*/
     width: 65.66667%;
     float: left;
@@ -950,24 +968,24 @@ section.annonce .vignette {
     margin-bottom: 6%;
     font-size: 1.2em;
   }
-  /* line 636, ../sass/final.scss */
-  section.annonce .vignette {
+  /* line 654, ../sass/final.scss */
+  section.annonces .vignette {
     display: block;
   }
-  /* line 639, ../sass/final.scss */
-  section.annonce .vignette img {
+  /* line 657, ../sass/final.scss */
+  section.annonces .vignette img {
     width: 10%;
     /*clear: both;*/
     display: inline-block;
   }
-  /* line 647, ../sass/final.scss */
-  section.annonce h4 {
+  /* line 665, ../sass/final.scss */
+  section.annonces h4 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 659, ../sass/final.scss */
-  section.annonce img {
+  /* line 677, ../sass/final.scss */
+  section.annonces img {
     /*taille d'une colonne*/
     width: 32.33333%;
     float: left;
@@ -981,22 +999,22 @@ section.annonce .vignette {
     margin-top: 2em;
     float: right;
   }
-  /* line 668, ../sass/final.scss */
-  section.annonce h6.titleAnnonce {
+  /* line 686, ../sass/final.scss */
+  section.annonces h6.titleAnnonce {
     padding-top: 1em;
     font-size: 1.5em;
   }
-  /* line 673, ../sass/final.scss */
-  section.annonce h6.titleCategorie {
+  /* line 691, ../sass/final.scss */
+  section.annonces h6.titleCategorie {
     font-size: 1.2em;
   }
-  /* line 678, ../sass/final.scss */
-  section.annonce ul {
+  /* line 696, ../sass/final.scss */
+  section.annonces ul {
     margin: 0;
     font-size: 1.2em;
   }
-  /* line 683, ../sass/final.scss */
-  section.annonce p {
+  /* line 701, ../sass/final.scss */
+  section.annonces p {
     /*taille d'une colonne*/
     width: 65.66667%;
     float: left;
@@ -1009,18 +1027,18 @@ section.annonce .vignette {
     margin-bottom: 6%;
     font-size: 1.2em;
   }
-  /* line 690, ../sass/final.scss */
-  section.annonce .vignette {
+  /* line 708, ../sass/final.scss */
+  section.annonces .vignette {
     display: block;
   }
-  /* line 693, ../sass/final.scss */
-  section.annonce .vignette img {
+  /* line 711, ../sass/final.scss */
+  section.annonces .vignette img {
     width: 10%;
     /*clear: both;*/
     display: inline-block;
   }
-  /* line 701, ../sass/final.scss */
-  section.annonce h4 {
+  /* line 719, ../sass/final.scss */
+  section.annonces h4 {
     margin-left: 5%;
     font-size: 1.5em;
   }

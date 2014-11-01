@@ -184,8 +184,16 @@ textarea.form-control{
             font-size: 2em;   
         }
         
-        header h2{
+        header {
+            nav{
+				button{
+					display: none;
+				}
+			}
+            
+            h2{
             font-size: 4em;
+            }
         }
         
 		nav ul.navbar{
@@ -373,7 +381,7 @@ section.recherche {
 
     h4{
         background-color: #525252;
-        width:18em;
+        width:8em;
         padding-top: 1%;
         padding-bottom: 2%;
         padding-left: 2%;
@@ -455,7 +463,6 @@ section.result-recherche{
                     text-decoration: none;
                     color: black;
                     padding-bottom: 1em;
-                    width: 10px;
                 }
 		
 	   }
@@ -476,13 +483,15 @@ section.result-recherche{
                     @include column(3,12);
                     background-color : #525252;
                     margin-bottom: 0.8em;
-
+                    min-height: 6em;
+                        
                     img{
                         max-width: 100%; /*70%*/
                         @include column(8,12);
+                        
                     }
                     div{
-                        @include column(4,12);
+                        @include column(12,12);
                     }
                 }
                 
@@ -515,12 +524,21 @@ section.result-recherche{
                     
                     img{
 				        max-width: 20%;
+                        
+                    }
+                    
+                    div{
+                       @include column(4,12);
+                       float: none;
+                        
                     }
                     
                     p.description{
                         display: block;
-                        margin-top: 3em;
+                        /*margin-top: 3em;*/
+/*
                         padding-left: 10em;
+*/
                         text-align: justify;
                     }
                 }
@@ -539,7 +557,7 @@ section.result-recherche{
 
 
 /***************** pages annonce ************************/
-section.annonce {
+section.annonces {
     img{
         @include column (10,12);
         margin-left: 5%;
@@ -603,7 +621,7 @@ section.annonce {
 
 
 @media screen and (min-width: $medium){
-    section.annonce {
+    section.annonces {
         img{
             @include column (4,12);
             margin-left: 0%;
@@ -655,7 +673,7 @@ section.annonce {
 
 
 @media screen and (min-width: $large){
-    section.annonce {
+    section.annonces {
         img{
             @include column (4,12);
             margin-left: 0%;
