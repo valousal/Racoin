@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../stylesheets/framework/reset_meyer.css" />
+		<link rel="stylesheet" href="../stylesheets/framework/framework.css" />
+		
+        
+        <!--<link rel="stylesheet" href="../stylesheets/screen.css" />-->
+        <!-- <link href="../stylesheets/print.css" rel="stylesheet" type="text/css" />-->
+		<link rel="stylesheet" href="../stylesheets/final.css" />
+		<title>Racoin - Objet annonce</title>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("body button").click(function(){
+					$t = "+";
+					if($('body header nav ul').css('display') == "none"){
+						$t = "-";
+					}
+					$('body header nav button span').text($t);
+					$('body header nav ul').slideToggle('medium');
+				});
+			});
+			
+			/*$('body').click(function(){
+				alert('ooo');
+			});*/
+			
+			/*$.(function(){
+				alert('ok');
+			})*/
+		</script>
+	</head>
+	<body>
+		<header>
+            <nav>
+                <button>Menu<span>+</span></button>
+                <ul class="navbar">
+                    <li><a href="recherche.html">Rechercher</a></li>
+                    <li><a href="add.html">Ajouter</a></li>
+                    <li><a href="#">Gérer</a></li>
+                </ul>
+            </nav>
+                <h2><a href='../index.html'>RACOIN.NET</a></h2>
+            <div class="title-add">
+                <h3 class="small">Une annonce</h3>
+            </div>
+		</header>
+		
+            <section class="annonce">
+				<!--deux forms-->
+                <!--<h4 class="small">Informations de l'article et de l'annonceur</h4>-->
+				<article class="rowVale">
+                    <a href="annonces.html"><h6 class="titleAnnonce">Title</h6><h6 class="titleCategorie">Categorie</h6></a>
+                    <img src="../img/small/PQ.jpg" alt="pq"/>
+                    
+                      
+                    <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise urvivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.en page de texte, comme Aldus PageMaker.</p>
+              
+                    
+                    
+                    <div class="vignette">  
+                        <img src="../img/small/PQ.jpg" alt="pq"/>
+                        <img src="../img/small/PQ.jpg" alt="pq"/>
+                        <img src="../img/small/PQ.jpg" alt="pq"/>
+                    </div>
+                    
+                    
+                    <p>Prix : 2000 €</p>
+                </article>
+
+                    
+                    <!--description-->
+                 <h4 class="small">Caractéristique</h4>
+                <article class="rowVale">
+                    <ul>
+                        <li><span>- Type de produit : </span>Pouf</li>
+                        <li><span>- Couleur : </span>Multicolore</li>
+                        <li><span>- Matière : </span>Tissu,Mousse</li>
+                        <li><span>- Dimensions : </span>Ø 60 x H 35 cm</li>
+                        <li><span>- Caractéristiques : </span>Fermeture zip, entièrement déhoussable - Housse lavable en machine à 30°</li>
+                    </ul>
+                </article>  
+                
+                
+                    <!-- caractéristique-->
+                 <h4 class="small">L'annonceur</h4>
+                <article class="rowVale">
+                    <ul>
+                        <li><span>- Nom : </span>Mme Dervaux</li>
+                        <li><span>- Email : </span><a href="mailto:contact@mobilier_design.com">contact@mobilier_design.com</a></li>
+                        <li><span>- Téléphone : </span>0685947832</li>
+                        <li><span>- Adresse : </span>16 rue de la paix, 75000 Paris</li>
+                    </ul> 
+                </article> 
+                
+                
+                
+                    <!-- info annonceur-->
+                <h4 class="small">Vous êtes l'annonceur ?</h4>
+                <article class="rowVale"><!--form authentification-->
+                <!--first form -->
+                    <div class="info_login">
+                        <fieldset>	<!--<legend>Formulaire</legend>-->
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputLogin" placeholder="Login">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
+                                </div>
+                                <div class="form-group">
+                                      <button type="submit" class="btn-lg-lg btn">Ajouter</button>
+                                </div>
+                            </form>
+                        </fieldset>
+                    </div>
+                </article>
+            </section>
+        
+			
+
+		
+		<footer>
+            <p>Copyright Lucas Arcuri & Valentin Salvestroni </p>
+		</footer>
+	</body>
+</html>

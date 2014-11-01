@@ -1,0 +1,300 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "framework/GrilleFramMixins";
+
+ 
+$medium: 640px!default;
+$large: 1024px!default;
+ /*320px mobile portrait
+480px mobile paysage
+600px petite tablette portrait
+768px tablette 10pouces portrait (ipad)
+1024px tablette paysage et petit pc portable
+1200px ecran ordi*/
+$widthRow: 100%!default; /*largeur d'une ligne*/
+$marginRow: 0.5em!default; /*margin bottom d'une ligne*/
+
+.row{
+		@include row($widthRow, $marginRow);
+		margin-left: auto;
+		margin-right: auto;
+}
+ 
+/*************************Lucas **************************/
+/*************************Index **************************/
+body{
+
+	background-color: #8ce0c4;
+	/*background-color: white;*/
+
+	nav ul.navbar{
+		display: none;
+	}
+
+	/*article:first-child{
+		ul.navbar{
+			display: block;
+		}
+	}*/
+	
+	div section:first-of-type{
+		display: none;
+	}
+
+	.annonce{
+		@include column(12,12);
+		/*background-color: #525252;*/
+		margin-bottom: 0.3em;
+		background-color: #8ce0c4;
+		
+		img{
+			max-width: 100%; /*70%*/
+			@include column(8,12);
+		}
+		div{
+			@include column(4,12);
+			font-size: 1.3em;
+			overflow: hidden;
+			line-height: 1.5em;
+		}
+		a{
+			text-decoration: none;
+		}
+	}
+		
+		
+}
+header{
+    background-color: #8ce0c4;
+    background-image: url('../images/header.jpg');
+    min-height:10em;
+    text-align: center;
+
+    h2{
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+        margin-top: 2.5%;
+		a{
+			color: #fff;
+			text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+		}
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+footer{
+    background-color: #245759;
+    height:5em;
+    padding-top: 4%;
+    p {
+       text-align: center;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+        
+    }
+    
+}
+
+
+
+
+.title-add{
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+    text-align: center;
+    color:#ffffff;
+    /*background-color: black;*/
+    height:3em;
+    margin-bottom: 5%;
+    margin-top: 1%;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+
+.titleCat{
+	color: #f7483b;
+	background-color: #525252;
+	text-align: center;
+	padding: 0.3em;
+	/*display: block;*/
+}
+
+.titleAnnonce{
+	color: #f7483b;
+	background-color: #525252;
+	padding: 0.3em;
+	text-decoration: none;
+}
+
+.price{
+	background-color: #f7483b;
+	color: #fff;
+	@include border-radius(10px 10px 10px 10px);
+	padding: 0.5em;
+	/*font-size: 2em;*/
+	display: block;
+	/*margin-top: 100%;*/
+}
+
+#jumbotron{
+    display: none;
+}
+/*----------------------*\
+	$Medium (tablettes)
+\*---------------------- */
+@media screen and (min-width: $medium){
+	body{
+        .title-add{
+            font-size: 2em;   
+        }
+        
+        header h2{
+            font-size: 4em;
+        }
+        
+		nav ul.navbar{
+			display: block;
+			li{	
+				a{	
+					color: #fff;
+				}
+			}
+		}
+		aside:first-of-type{
+			ul.navbar{
+				display: block;
+				width: 100%;
+				li{
+					display: inline-block;
+					width: 50%;
+				}
+			}
+		}
+		section:first-of-type{
+			div{
+				@include column(4,12);
+				/*background-color: #525252;*/
+				margin-bottom: 0.8em;
+					
+				img{
+					max-width: 100%; /*70%*/
+					@include column(8,12);
+				}
+				div{
+					@include column(4,12);
+					font-size: 1.3em;
+				}
+			}	
+		}			
+	}
+	.price{
+		padding: 0.5em;
+		font-size: 1em;
+		display: inline-block;
+		/*margin-top: 100%;*/
+	}
+    
+    body nav ul.navbar{
+		display: block;
+		width:100%;
+	   background-color: transparent;
+		
+		li{
+			background-color: transparent;
+			color: #fff;
+			&:hover{
+				background-color: transparent;
+			}
+			a{
+				color: #fff;
+				text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+				text-transform: uppercase;
+				font-weight: bold;
+				&:hover{
+					/*border-left: solid 2px;*/
+					background-color: #8ce0c4;
+				}
+			}
+		}
+	}
+}
+
+/*----------------------*\
+	$Large
+\*---------------------- */
+@media screen and (min-width: $large){
+	/*width: 100%; margin: auto; margin-bottom: 0.5em;*/
+	body{
+		header{
+            
+            .title-add{
+                font-size: 2em;   
+            }
+            
+            h2{
+                font-size: 4em;
+            }
+			nav{
+				button{
+					display: none;
+				}
+			}
+		}
+		
+		div section:first-of-type{
+			display: block;
+			margin-bottom: 0.5em;
+			@include column(8,12);
+			/*background-color: */
+			
+			div{
+				@include column(12,12);
+				div{
+					@include column(9,12, 0);
+				}
+				img{
+					/*max-width: 20%;*/
+					@include column(3,12,0);
+				}
+			}
+		}
+		
+		aside:first-of-type{
+			@include column(4,12);
+			ul.navbar{
+				display: block;
+				width: 100%;
+				li{
+					display: inline-block;
+					width: 100%;
+				}
+			}
+		}
+		section:first-of-type{
+		
+			/*&.row{
+				width: 80%;
+			}*/
+			div.annonce{
+				@include column(2.4,12);
+				/*background-color: #525252;*/
+				margin-bottom: 0.8em;
+					
+				img{
+					max-width: 100%; /*70%*/
+					@include column(12,12);
+				}
+				div{
+					@include column(12,12);
+				}
+			}	
+		}			
+	}
+}
+
+

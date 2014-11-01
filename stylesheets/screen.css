@@ -1,0 +1,484 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/***La largeur, le nombre de colonnes, la taille des gouti├¿res et marges sont d├®finies dans des variables.***/
+/**Le mixin, nomm├® grid, g├®n├¿re des lignes qui contiennent des cellules (que beaucoup nomment colonnes).**/
+/* $last-column a prendre en compte ??? */
+/****************************************************************************/
+/*.row{
+    @include row(100%,2%);
+    .col1{
+        @include column(1,12);
+    }
+    .col2{
+        @include column(2,12);
+    }
+    .col3{
+        @include column(3,12);
+    }
+	.col4{
+        @include column(4,12);
+    }
+	.col5{
+        @include column(5,12);
+    }
+	.col6{
+        @include column(6,12);
+    }
+	.col7{
+        @include column(7,12);
+    }
+	.col8{
+        @include column(8,12);
+    }
+	.col9{
+        @include column(9,12);
+    }
+	.col10{
+        @include column(10,12);
+    }
+	.col11{
+        @include column(11,12);
+    }
+	.col12{
+        @include column(12,12);
+    }
+}
+
+@media screen and (max-width: $sizeTablet) {
+  body {
+    margin-top: 0.5em;
+  }
+  .row .box1 {
+    @include column(1, 1);
+    background-color: red;
+  }
+  .row .box3 {
+    @include column(1, 4);
+    background-color: green;
+  }
+  .row .box4 {
+    @include column(1, 4);
+    margin-bottom: $pad;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: $sizeMobile) {
+  .row .box3 {
+    @include pad;
+  }
+
+}*/
+ /*320px mobile portrait
+480px mobile paysage
+600px petite tablette portrait
+768px tablette 10pouces portrait (ipad)
+1024px tablette paysage et petit pc portable
+1200px ecran ordi*/
+/*largeur d'une ligne*/
+/*margin bottom d'une ligne*/
+/* line 20, ../sass/screen.scss */
+.row {
+  width: 100%;
+  /* min-width: $width;
+   max-width: $width;*/
+  margin-top: 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, ../sass/framework/_GrilleFramMixins.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*************************Lucas **************************/
+/*************************Index **************************/
+/* line 28, ../sass/screen.scss */
+body {
+  background-color: #8ce0c4;
+  /*background-color: white;*/
+  /*article:first-child{
+  	ul.navbar{
+  		display: block;
+  	}
+  }*/
+}
+/* line 33, ../sass/screen.scss */
+body nav ul.navbar {
+  display: none;
+}
+/* line 43, ../sass/screen.scss */
+body div section:first-of-type {
+  display: none;
+}
+/* line 47, ../sass/screen.scss */
+body .annonce {
+  /*taille d'une colonne*/
+  width: 99%;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0.5%;
+  /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  /*background-color: #525252;*/
+  margin-bottom: 0.3em;
+  background-color: #8ce0c4;
+}
+/* line 53, ../sass/screen.scss */
+body .annonce img {
+  max-width: 100%;
+  /*70%*/
+  /*taille d'une colonne*/
+  width: 65.66667%;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0.5%;
+  /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+}
+/* line 57, ../sass/screen.scss */
+body .annonce div {
+  /*taille d'une colonne*/
+  width: 32.33333%;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0.5%;
+  /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  font-size: 1.3em;
+  overflow: hidden;
+  line-height: 1.5em;
+}
+/* line 63, ../sass/screen.scss */
+body .annonce a {
+  text-decoration: none;
+}
+
+/* line 70, ../sass/screen.scss */
+header {
+  background-color: #8ce0c4;
+  background-image: url("../images/header.jpg");
+  min-height: 10em;
+  text-align: center;
+}
+/* line 76, ../sass/screen.scss */
+header h2 {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  margin-top: 2.5%;
+}
+/* line 79, ../sass/screen.scss */
+header h2 a {
+  color: #fff;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+/* line 85, ../sass/screen.scss */
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 93, ../sass/screen.scss */
+footer {
+  background-color: #245759;
+  height: 5em;
+  padding-top: 4%;
+}
+/* line 97, ../sass/screen.scss */
+footer p {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+}
+
+/* line 108, ../sass/screen.scss */
+.title-add {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  text-align: center;
+  color: #ffffff;
+  /*background-color: black;*/
+  height: 3em;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* line 119, ../sass/screen.scss */
+.titleCat {
+  color: #f7483b;
+  background-color: #525252;
+  text-align: center;
+  padding: 0.3em;
+  /*display: block;*/
+}
+
+/* line 127, ../sass/screen.scss */
+.titleAnnonce {
+  color: #f7483b;
+  background-color: #525252;
+  padding: 0.3em;
+  text-decoration: none;
+}
+
+/* line 134, ../sass/screen.scss */
+.price {
+  background-color: #f7483b;
+  color: #fff;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.5em;
+  /*font-size: 2em;*/
+  display: block;
+  /*margin-top: 100%;*/
+}
+
+/* line 144, ../sass/screen.scss */
+#jumbotron {
+  display: none;
+}
+
+/*----------------------*\
+	$Medium (tablettes)
+\*---------------------- */
+@media screen and (min-width: 640px) {
+  /* line 152, ../sass/screen.scss */
+  body .title-add {
+    font-size: 2em;
+  }
+  /* line 156, ../sass/screen.scss */
+  body header h2 {
+    font-size: 4em;
+  }
+  /* line 160, ../sass/screen.scss */
+  body nav ul.navbar {
+    display: block;
+  }
+  /* line 163, ../sass/screen.scss */
+  body nav ul.navbar li a {
+    color: #fff;
+  }
+  /* line 169, ../sass/screen.scss */
+  body aside:first-of-type ul.navbar {
+    display: block;
+    width: 100%;
+  }
+  /* line 172, ../sass/screen.scss */
+  body aside:first-of-type ul.navbar li {
+    display: inline-block;
+    width: 50%;
+  }
+  /* line 179, ../sass/screen.scss */
+  body section:first-of-type div {
+    /*taille d'une colonne*/
+    width: 32.33333%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+    /*background-color: #525252;*/
+    margin-bottom: 0.8em;
+  }
+  /* line 184, ../sass/screen.scss */
+  body section:first-of-type div img {
+    max-width: 100%;
+    /*70%*/
+    /*taille d'une colonne*/
+    width: 65.66667%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+  /* line 188, ../sass/screen.scss */
+  body section:first-of-type div div {
+    /*taille d'une colonne*/
+    width: 32.33333%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+    font-size: 1.3em;
+  }
+
+  /* line 195, ../sass/screen.scss */
+  .price {
+    padding: 0.5em;
+    font-size: 1em;
+    display: inline-block;
+    /*margin-top: 100%;*/
+  }
+
+  /* line 202, ../sass/screen.scss */
+  body nav ul.navbar {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+  }
+  /* line 207, ../sass/screen.scss */
+  body nav ul.navbar li {
+    background-color: transparent;
+    color: #fff;
+  }
+  /* line 210, ../sass/screen.scss */
+  body nav ul.navbar li:hover {
+    background-color: transparent;
+  }
+  /* line 213, ../sass/screen.scss */
+  body nav ul.navbar li a {
+    color: #fff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /* line 218, ../sass/screen.scss */
+  body nav ul.navbar li a:hover {
+    /*border-left: solid 2px;*/
+    background-color: #8ce0c4;
+  }
+}
+/*----------------------*\
+	$Large
+\*---------------------- */
+@media screen and (min-width: 1024px) {
+  /*width: 100%; margin: auto; margin-bottom: 0.5em;*/
+  /* line 235, ../sass/screen.scss */
+  body header .title-add {
+    font-size: 2em;
+  }
+  /* line 239, ../sass/screen.scss */
+  body header h2 {
+    font-size: 4em;
+  }
+  /* line 243, ../sass/screen.scss */
+  body header nav button {
+    display: none;
+  }
+  /* line 249, ../sass/screen.scss */
+  body div section:first-of-type {
+    display: block;
+    margin-bottom: 0.5em;
+    /*taille d'une colonne*/
+    width: 65.66667%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+    /*background-color: */
+  }
+  /* line 255, ../sass/screen.scss */
+  body div section:first-of-type div {
+    /*taille d'une colonne*/
+    width: 99%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+  /* line 257, ../sass/screen.scss */
+  body div section:first-of-type div div {
+    /*taille d'une colonne*/
+    width: 75%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+  /* line 260, ../sass/screen.scss */
+  body div section:first-of-type div img {
+    /*max-width: 20%;*/
+    /*taille d'une colonne*/
+    width: 25%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+  /* line 267, ../sass/screen.scss */
+  body aside:first-of-type {
+    /*taille d'une colonne*/
+    width: 32.33333%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+  /* line 269, ../sass/screen.scss */
+  body aside:first-of-type ul.navbar {
+    display: block;
+    width: 100%;
+  }
+  /* line 272, ../sass/screen.scss */
+  body aside:first-of-type ul.navbar li {
+    display: inline-block;
+    width: 100%;
+  }
+  /* line 278, ../sass/screen.scss */
+  body section:first-of-type {
+    /*&.row{
+    	width: 80%;
+    }*/
+  }
+  /* line 283, ../sass/screen.scss */
+  body section:first-of-type div.annonce {
+    /*taille d'une colonne*/
+    width: 19.0%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+    /*background-color: #525252;*/
+    margin-bottom: 0.8em;
+  }
+  /* line 288, ../sass/screen.scss */
+  body section:first-of-type div.annonce img {
+    max-width: 100%;
+    /*70%*/
+    /*taille d'une colonne*/
+    width: 99%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+  /* line 292, ../sass/screen.scss */
+  body section:first-of-type div.annonce div {
+    /*taille d'une colonne*/
+    width: 99%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.5%;
+    /*regarde si on demande une valeur de pouss├®e diff├®rent de z├®ro */
+  }
+}

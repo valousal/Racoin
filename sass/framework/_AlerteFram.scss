@@ -1,0 +1,35 @@
+/*MESSAGE ALERTE*/
+.messagealerte {  
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	/*background-position: 10px center;*/
+	width:100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.info {
+	@extend .messagealerte;
+	color: #00529B;
+	background-color: #BDE5F8;
+	/*background-image: url('info.png');*/
+}
+.success {
+	@extend .messagealerte;
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	/*background-image:url('success.png');*/
+}
+.warning {
+	@extend .messagealerte; 
+	color: #9F6000;
+	background-color: #FEEFB3;
+	/*background-image: url('warning.png');*/
+}
+.error {
+	@extend .messagealerte;
+	color: #D8000C;
+	background-color: #FFBABA;
+	/*background-image: url('error.png');*/
+} 

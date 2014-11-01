@@ -1,0 +1,209 @@
+/******************************* Variables *********************************/
+/******************************* Variables *********************************/
+
+/*Typographie content*/
+$base-text-color : #000000;
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size: 1em;
+$base-font-weight: 300;
+
+/*Typographie
+/* $fixed-font-family: 'Andale Mono', AndaleMono, monospace; */
+/* $fixed-font-size: 15px; */
+/* $fixed-line-height: 1.2; */
+
+/*Typographie Header */
+$heading-font-family: 'Roboto Condensed', sans-serif;
+$heading-font-weight: 700;
+$heading-font-size : 3.2em;
+
+/*Typographie Link */
+$link-color: #d54aaf; 
+$link-hover-color: saturate(#d54aaf, 20%);
+$link-visited-color: purple;
+
+
+/******************************* Fin Variables *********************************/
+/******************************* Fin Variables *********************************/
+
+  
+
+html {
+	font-size: $base-font-size;
+	-webkit-text-size-adjust: 100%; //Choisit la taille de la police pour que la hauteur des lettres bas de casse (comme déterminée par la mesure x-height de la police) soit le nombre spécifié multiplié par font-size.
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	background-color: #ffffff;
+	color: $base-text-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+	//line-height: 1.5em;
+}
+
+
+.link{
+	color:$link-color;
+	text-decoration:none;
+
+	&:visited{
+		color: $link-visited-color;
+	}
+
+	&:hover{
+		color: $link-hover-color;
+		background-color: lightgrey;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family: $heading-font-family; 
+	font-weight: $heading-font-weight; 
+}
+
+h1{
+	font-size : $heading-font-size; 
+}
+
+h2{
+	font-size : ($heading-font-size/1.15); 
+}  
+
+h3{
+	font-size : ($heading-font-size/1.33);
+}
+
+h4{
+	font-size : ($heading-font-size/1.6);
+}
+
+h5{
+	font-size : ($heading-font-size/1.77); 
+}
+
+h6{
+	font-size : ($heading-font-size/2);  
+}
+ 
+
+
+/* alternate font-sizing */
+.smaller {
+  font-size: 0.71em;
+}
+
+.small {
+  font-size: 0.86em;
+}
+
+.big {
+  font-size: 1.14em; 
+}
+
+.bigger {
+  font-size: 1.29em;
+}
+
+.biggest {
+  font-size: 1.43em;
+}
+
+
+.italic { 
+	font-style: italic; 
+}
+
+.bold{
+	font-weight:700;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+mark{
+	background-color: yellow;
+  	color: black;
+}
+
+del{
+	text-decoration : line-through;
+}
+
+ins{ /*afficher des modif*/
+	text-decoration : underline;
+}
+
+u{
+	text-decoration : underline;
+}
+
+strong{
+	font-weight: bolder;
+}
+
+em{ /*emphase*/
+	font-style : italic;
+}
+
+abbr{
+	border-bottom:dotted 1px black; 
+	cursor:help;
+}
+
+code{
+	white-space: pre-line;
+ 	 /* IE fix */
+ 	 white-space: pre-wrap;
+	font-style:italic;
+	margin:3em;
+	border:solid 1px;
+	padding:10px;
+}
+
+pre{
+	white-space: pre-line;
+ 	 /* IE fix */
+ 	 white-space: pre-wrap;
+	border:solid 1px;
+	background-color: lightgrey;
+	padding:10px;
+	margin:3em;
+}
+
+kbd{ /*indique une cmd ex:CTRL + A*/
+	white-space: pre-line;
+ 	 /* IE fix */
+ 	 white-space: pre-wrap;
+	font-size:0.8em; 
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+}
+
+
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.left{
+	text-align : left;
+}
+
+.center{
+	text-align : center;
+}
+
+.right{
+	text-align : right;
+}
+
+.justify{
+	text-align : justify;
+}

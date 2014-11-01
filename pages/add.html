@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../stylesheets/framework/reset_meyer.css" />
+		<link rel="stylesheet" href="../stylesheets/framework/framework.css" />
+		
+        
+        <!--<link rel="stylesheet" href="../stylesheets/screen.css" />-->
+      <!-- <link href="../stylesheets/print.css" rel="stylesheet" type="text/css" />-->
+		<link rel="stylesheet" href="../stylesheets/final.css" />
+		<title>Racoin - Ajouter une annonce</title>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("body button").click(function(){
+					$t = "+";
+					if($('body header nav ul').css('display') == "none"){
+						$t = "-";
+					}
+					$('body header nav button span').text($t);
+					$('body header nav ul').slideToggle('medium');
+				});
+			});
+			
+			/*$('body').click(function(){
+				alert('ooo');
+			});*/
+			
+			/*$.(function(){
+				alert('ok');
+			})*/
+		</script>
+	</head>
+	<body>
+		<header>
+            <nav>
+                <button>Menu<span>+</span></button>
+                <ul class="navbar">
+                    <li><a href="recherche.html">Rechercher</a></li>
+                    <li><a href="add.html">Ajouter</a></li>
+                    <li><a href="#">Gérer</a></li>
+                </ul>
+            </nav>
+                <h2><a href='../index.html'>RACOIN.NET</a></h2>
+            <div class="title-add">
+                <h3 class="small">Ajouter une annonce</h3>
+            </div>
+		</header>
+		
+            
+        
+			<section class="add">
+				<!--deux forms-->
+                <h4 class="small">Informations de l'article et de l'annonceur</h4>
+				<article class="rowVale">
+					<!--first form -->
+						<div class="info_article">
+							<fieldset>	<!--<legend>Formulaire</legend>-->
+						        <form class="form-horizontal">
+						            <div class="form-group">
+								    	<input type="text" class="form-control" id="inputTitre" placeholder="Titre">
+						            </div>
+						            <div class="form-group">
+						                <!--<label for="inputPassword" class="control-label">Password</label>-->
+						                <SELECT name="categorie" class="form-control" id='selectCategorie'>
+											<OPTION>lundi</OPTION>
+											<OPTION>mardi</OPTION>
+											<OPTION>mercredi</OPTION>
+											<OPTION>jeudi</OPTION>
+											<OPTION>vendredi</OPTION>
+										</SELECT>
+						            </div>
+						            <div class="form-group">
+						            	<textarea class="form-control" id="inputDescription" placeholder="Votre description..." rows="10" cols="50"></textarea>
+						            </div>
+						            <div class="form-group"> 
+						            	<input type="file" name="pic" class="form-control" id="inputFile" accept="image/*">
+						            </div>
+						            <div class="form-group">
+								    	<!--<input type="range" class="form-control" id="inputPrice" min="0" max="10">-->
+								    	<input type="num" name="price" class="form-control" id="inputPrice" placeholder="Votre prix">
+						            </div>
+						        </form>
+						    </fieldset>
+						</div>
+					<!--</div>-->
+				<!--</article>-->
+
+                <!--<h4 class="small">Informations de l'annonceur</h4>-->
+				<!--<article>-->
+					<!--second form-->
+					<!--<div class="row">-->
+					<!--first form -->
+						<div class="info_annonceur">
+							<fieldset>	<!--<legend>Formulaire</legend>-->
+						        <form class="form-horizontal">
+						            <div class="form-group">
+								    	<input type="text" class="form-control" id="inputNom" placeholder="Nom">
+						            </div>
+						            <div class="form-group">
+								    	<input type="text" class="form-control" id="inputPrenom" placeholder="Prenom">
+						            </div>
+						            <div class="form-group">
+								    	<input type="email" class="form-control" id="inputMail" placeholder="Email">
+						            </div>
+						            <div class="form-group">
+								    	<input type="text" class="form-control" id="inputAdresse" placeholder="5 rue de la-haut">
+						            </div>
+						            <div class="form-group">
+								    	<input type="text" class="form-control" id="inputCP" placeholder="54000">
+						            </div>
+						            <div class="form-group">
+						            	<input type="text" class="form-control" id="inputVille" placeholder="Nancy">
+						            </div>
+						            <div class="form-group"> 
+						            	<input type="tel" class="form-control" id="inputTel" placeholder="Numéro">
+						            </div>
+						        </form>
+						    </fieldset>
+						</div>
+				</article>
+                
+                
+                <h4 class="small">Connexion</h4>
+				
+                <article class="rowVale"><!--form authentification-->
+					<!--first form -->
+						<div class="info_login">
+							<fieldset>	<!--<legend>Formulaire</legend>-->
+								<form class="form-horizontal">
+									<div class="form-group">
+								    	<input type="text" class="form-control" id="inputLogin" placeholder="Login">
+						            </div>
+						            <div class="form-group">
+						            	<input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
+						            </div>
+                                    <div class="form-group">
+						                  <button type="submit" class="btn-lg-lg btn">Ajouter</button>
+						            </div>
+			             		</form>
+						    </fieldset>
+						</div>
+				</article>
+			</section>
+
+		
+		<footer>
+            <p>Copyright Lucas Arcuri & Valentin Salvestroni </p>
+		</footer>
+	</body>
+</html>

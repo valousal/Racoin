@@ -1,0 +1,126 @@
+/***La largeur, le nombre de colonnes, la taille des goutières et marges sont définies dans des variables.***/
+
+@import 'compass/css3';
+$sizeBigDesktop: 1600px;
+$sizeDesktop: 1200px;
+$sizeTablet: 1024px;
+$sizePortrait: 768px;
+$sizeMobile: 480px;
+$pad: 1%; 
+
+
+@mixin row($width, $margin) {
+  width: $width;
+ /* min-width: $width;
+  max-width: $width;*/
+  margin-top: $margin;   
+    @include box-sizing(border-box);
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+} 
+
+
+
+
+/**Le mixin, nommé grid, génère des lignes qui contiennent des cellules (que beaucoup nomment colonnes).**/
+
+/* $last-column a prendre en compte ??? */
+
+@mixin column($columns,$total-columns,$w-gutter:1%,$push:0){
+    $w_col : (100% - ($total-columns * $w-gutter))/$total-columns; /*taille d'une colonne*/
+    width: $columns*($w_col)+(($columns - 1) * $w-gutter);
+    float:left;
+    @include box-sizing(border-box);
+    margin: 0 ($w-gutter/2);
+    /*regarde si on demande une valeur de poussée différent de zéro */
+    
+    @if $push == 0 {
+        //rien à faire
+    }
+    @else{
+        
+        $p : ($push * $w_col + ($push) * $w-gutter) + $w-gutter/2;
+        margin-left: $p;
+    } 
+    
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************/
+//mixins grille 
+/*.row{
+    @include row(100%,2%);
+    .col1{
+        @include column(1,12);
+    }
+    .col2{
+        @include column(2,12);
+    }
+    .col3{
+        @include column(3,12);
+    }
+	.col4{
+        @include column(4,12);
+    }
+	.col5{
+        @include column(5,12);
+    }
+	.col6{
+        @include column(6,12);
+    }
+	.col7{
+        @include column(7,12);
+    }
+	.col8{
+        @include column(8,12);
+    }
+	.col9{
+        @include column(9,12);
+    }
+	.col10{
+        @include column(10,12);
+    }
+	.col11{
+        @include column(11,12);
+    }
+	.col12{
+        @include column(12,12);
+    }
+}
+
+@media screen and (max-width: $sizeTablet) {
+  body {
+    margin-top: 0.5em;
+  }
+  .row .box1 {
+    @include column(1, 1);
+    background-color: red;
+  }
+  .row .box3 {
+    @include column(1, 4);
+    background-color: green;
+  }
+  .row .box4 {
+    @include column(1, 4);
+    margin-bottom: $pad;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: $sizeMobile) {
+  .row .box3 {
+    @include pad;
+  }
+
+}*/

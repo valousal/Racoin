@@ -1,0 +1,710 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "framework/GrilleFramMixins";
+
+ 
+$medium: 640px!default;
+$large: 1024px!default;
+ /*320px mobile portrait
+480px mobile paysage
+600px petite tablette portrait
+768px tablette 10pouces portrait (ipad)
+1024px tablette paysage et petit pc portable
+1200px ecran ordi*/
+$widthRow: 100%!default; /*largeur d'une ligne*/
+$marginRow: 0.5em!default; /*margin bottom d'une ligne*/
+
+.row{
+		@include row($widthRow, $marginRow);
+		margin-left: auto;
+		margin-right: auto;
+}
+.rowVale{
+		@include row($widthRow, 0);
+		margin-left: auto;
+		margin-right: auto;
+		
+		.info_article, .info_annonceur, .info_login{
+			@include column(12,12);    
+		}
+}
+ 
+
+body{
+
+	background-color: #8ce0c4;
+
+
+	nav ul.navbar{
+		display: none;
+	}
+
+	/*article:first-child{
+		ul.navbar{
+			display: block;
+		}
+	}*/
+	
+	div.indexfirst section:first-of-type{
+		display: none;
+	}
+
+	.annonce{
+		@include column(12,12);
+		margin-bottom: 0.3em;
+		background-color: #8ce0c4;
+		
+		img{
+			max-width: 100%; /*70%*/
+			@include column(8,12);
+		}
+		div{
+			@include column(4,12);
+			font-size: 1.3em;
+			overflow: hidden;
+			line-height: 1.5em;
+		}
+		a{
+			text-decoration: none;
+		}
+	}
+		
+		
+}
+header{
+    background-color: #8ce0c4;
+    background-image: url('../images/header.jpg');
+    min-height:10em;
+    text-align: center;
+
+    h2{
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+        margin-top: 2.5%;
+		a{
+			color: #fff;
+			text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+		}
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+footer{
+    background-color: #245759;
+    height:5em;
+    padding-top: 4%;
+    p {
+       text-align: center;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+        
+    }
+	display: inline-block;
+	width: 100%;
+    
+}
+
+
+
+
+.title-add{
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+    text-align: center;
+    color:#ffffff;
+    /*background-color: black;*/
+    height:3em;
+    margin-bottom: 5%;
+    margin-top: 1%;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+
+.titleCat{
+	color: #f7483b;
+	background-color: #525252;
+	text-align: center;
+	padding: 0.3em;
+	/*display: block;*/
+}
+
+.titleAnnonce{
+	color: #f7483b;
+	background-color: #525252;
+	padding: 0.3em;
+	text-decoration: none;
+}
+
+.price{
+	background-color: #f7483b;
+	color: #fff;
+	@include border-radius(10px 10px 10px 10px);
+	padding: 0.5em;
+	display: block;
+}
+
+section.add {
+    
+    h4{
+        background-color: #525252;
+        width:18em;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        line-height: 1.5em;
+        color : #f7483b;
+    }
+    
+    article{
+        background-color: #525252;
+        margin-bottom: 5em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+textarea.form-control{
+    height: auto;
+}
+
+#jumbotron{
+    display: none;
+}
+/*----------------------*\
+	$Medium (tablettes)
+\*---------------------- */
+@media screen and (min-width: $medium){
+	body{
+        .title-add{
+            font-size: 2em;   
+        }
+        
+        header h2{
+            font-size: 4em;
+        }
+        
+		nav ul.navbar{
+			display: block;
+			li{	
+				a{	
+					color: #fff;
+				}
+			}
+		}
+		div.indexfirst {
+			section > div{
+				background-color: #444;
+				margin-bottom: 30px;
+				
+			}
+			aside:first-of-type{
+				ul.navbar{
+					display: block;
+					width: 100%;
+					li{
+						display: inline-block;
+						width: 50%;
+					}
+				}
+				margin-bottom: 1em;
+			}
+		}
+		section.indexsecond{
+			div{
+				@include column(4,12);
+				/*background-color: #525252;*/
+				margin-bottom: 0.8em;
+					
+				img{
+					max-width: 100%; /*70%*/
+					@include column(8,12);
+				}
+				div{
+					@include column(4,12);
+					font-size: 1.3em;
+				}
+			}	
+		}			
+	}
+	.price{
+		padding: 0.5em;
+		font-size: 1em;
+		display: inline-block;
+		/*margin-top: 100%;*/
+	}
+    
+    body nav ul.navbar{
+		display: block;
+		width:100%;
+	   background-color: transparent;
+		
+		li{
+			background-color: transparent;
+			color: #fff;
+			&:hover{
+				background-color: transparent;
+			}
+			a{
+				color: #fff;
+				text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+				text-transform: uppercase;
+				font-weight: bold;
+				&:hover{
+					/*border-left: solid 2px;*/
+					background-color: #8ce0c4;
+				}
+			}
+		}
+	}
+	section.add h4{
+        font-size: 1.5em;
+    }
+}
+
+
+/*----------------------*\
+	$Large
+\*---------------------- */
+@media screen and (min-width: $large){
+	/*width: 100%; margin: auto; margin-bottom: 0.5em;*/
+	body{
+		header{
+            
+            .title-add{
+                font-size: 2em;   
+            }
+            
+            h2{
+                font-size: 4em;
+            }
+			nav{
+				button{
+					display: none;
+				}
+			}
+		}
+		
+		div.indexfirst section:first-of-type{
+			display: block;
+			margin-bottom: 0.5em;
+			@include column(8,12);
+			/*background-color: */
+			
+			div{
+				@include column(12,12);
+				div{
+					@include column(9,12, 0);
+				}
+				img{
+					/*max-width: 20%;*/
+					@include column(3,12,0);
+				}
+			}
+		}
+		
+		div.indexfirst aside:first-of-type{
+			@include column(4,12);
+			ul.navbar{
+				display: block;
+				width: 100%;
+				li{
+					display: inline-block;
+					width: 100%;
+				}
+			}
+		}
+		section.indexsecond{
+		
+			/*&.row{
+				width: 80%;
+			}*/
+			div.annonce{
+				@include column(2.4,12);
+				/*background-color: #525252;*/
+				margin-bottom: 0.8em;
+					
+				img{
+					max-width: 100%; /*70%*/
+					@include column(12,12);
+				}
+				div{
+					@include column(12,12);
+				}
+			}	
+		}			
+	}
+	section.add h4{
+        margin-left: 5%;
+    }
+    
+    .info_login .form-horizontal div:first-child{
+        @include column(4,12);
+    }
+    
+    .info_login .form-horizontal div:nth-child(2){
+        @include column(4,12);
+    }
+    
+    .info_login .form-horizontal div:last-child{
+        @include column(4,12);
+    }
+	
+	.rowVale{ //formulaire sur mobile page add
+		margin: auto; 
+		@include row(90%,0);
+		
+		padding: 4%;    
+			
+		.info_article, .info_annonceur{
+			@include column(6,12);	   
+		}
+    }
+}
+
+
+/***************** pages rechercher ************************/
+
+section.recherche {
+
+    h4{
+        background-color: #525252;
+        width:18em;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        line-height: 1.5em;
+        color : #f7483b;
+        font-size: 1.1em;
+    }
+
+    article{
+        background-color: #525252;
+        margin-bottom: 5em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+
+    input[type="range"] {
+        position: relative;
+    }
+
+    input[type="range"]:after,
+    input[type="range"]:before {
+        position: absolute;
+        top: 1.5em;
+        color: #aaa;
+    }
+
+    input[type="range"]:before {
+        left:0em;
+        content: attr(min);
+    }
+
+    input[type="range"]:after {
+        right: 0em;
+        content: attr(max);
+    }
+
+    #outputrange{
+        position: relative;
+        margin-left: 50%;
+    }
+}
+
+section.result-recherche{
+		article{
+                div{
+                    @include column(12,12);
+                    background-color : #525252;
+                    margin-bottom: 0.3em;
+                    
+                    img{
+                        max-width: 100%; /*70%*/
+                        @include column(8,12);
+                        }
+
+                    div{
+                        @include column(4,12);
+                        
+                        a{
+                            text-decoration: none;
+                            color:black;
+                            /*margin-bottom: 2em;*/
+                        }
+                        
+                    }
+                    
+                    p.description{
+                            display: none;
+                    }
+                }
+            
+                a{
+                    text-decoration: none;
+                    
+                }
+            
+                h6.titleAnnonce{
+                    text-decoration: none;
+                    color: black;
+                    padding-bottom: 1em;
+                    width: 10px;
+                }
+		
+	   }
+    
+        .annonce{
+            padding: 3%;
+        }
+}
+
+
+@media screen and (min-width: $medium){
+    section.recherche h4{
+        font-size: 1.3em;
+    }
+    section.result-recherche{
+            article{
+                    div{
+                    @include column(3,12);
+                    background-color : #525252;
+                    margin-bottom: 0.8em;
+
+                    img{
+                        max-width: 100%; /*70%*/
+                        @include column(8,12);
+                    }
+                    div{
+                        @include column(4,12);
+                    }
+                }
+                
+                h6.titleAnnonce{
+                    font-size: 1.1em
+                }
+            }
+    }
+    
+}
+
+
+@media screen and (min-width: $large){
+   section.recherche{
+     
+       @include column(4,12);
+       
+       h4{
+           margin-left: 5%;
+           font-size: 1.5em;
+       }
+   }
+    
+    section.result-recherche{
+        @include column (8,12);
+        article{
+                div{
+                    @include column(12,12);
+                    margin-bottom: 3%;
+                    
+                    img{
+				        max-width: 20%;
+                    }
+                    
+                    p.description{
+                        display: block;
+                        margin-top: 3em;
+                        padding-left: 10em;
+                        text-align: justify;
+                    }
+                }
+            
+                h6.titleAnnonce{
+                    font-size: 1.3em
+                }
+        }
+        
+    
+    }
+    
+}
+/***************** fin pages rechercher ************************/
+
+
+
+/***************** pages annonce ************************/
+section.annonce {
+    img{
+        @include column (10,12);
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2em;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    h6.titleAnnonce{
+        text-decoration: none;
+        color: black;
+        padding-top:1em;
+    }
+    
+    h6.titleCategorie{
+        font-size: 0.9em;
+        color: black;
+        padding-top: 1em;
+    }
+    
+    h4{
+        background-color: #525252;
+        width:18em;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        line-height: 1.5em;
+        color : #f7483b;
+        font-size: 1.1em;
+    }
+    
+    article{
+        /*@include column(12,12);*/
+        background-color: #525252;
+        margin-bottom: 3em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    ul{
+        margin: 0;
+        font-size: 1em;
+    }
+    
+    p{
+        @include column (12,12);
+        text-align: justify;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        font-size: 1em;
+    }
+    
+    .vignette{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: $medium){
+    section.annonce {
+        img{
+            @include column (4,12);
+            margin-left: 0%;
+            margin-right: 1%;
+            margin-top: 2em;
+            float: right;
+        }
+        
+        h6.titleAnnonce{
+            padding-top:1em;
+            font-size: 1.1em
+        }
+
+        h6.titleCategorie{
+            font-size: 1em;
+        }
+
+        ul{
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        p{
+            @include column (8,12);
+            margin-top: 6%;
+            margin-bottom: 6%;
+            font-size: 1.2em;
+        }
+        
+        .vignette{
+            display: block;
+            
+            img{
+                width:10%;
+                /*clear: both;*/
+                display: inline-block;
+                
+            }
+        }
+        
+        h4{
+            font-size: 1.3em;
+        }
+        
+
+    }
+
+}
+
+
+@media screen and (min-width: $large){
+    section.annonce {
+        img{
+            @include column (4,12);
+            margin-left: 0%;
+            margin-right: 1%;
+            margin-top: 2em;
+            float: right;
+        }
+
+        
+        h6.titleAnnonce{
+            padding-top:1em;
+            font-size: 1.5em
+        }
+
+        h6.titleCategorie{
+            font-size: 1.2em;
+        }
+        
+        
+        ul{
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        p{
+            @include column (8,12);
+            margin-top: 6%;
+            margin-bottom: 6%;
+            font-size: 1.2em;
+        }
+        
+        .vignette{
+            display: block;
+            
+            img{
+                width:10%;
+                /*clear: both;*/
+                display: inline-block;
+                
+            }
+        }
+        
+        h4{
+            margin-left: 5%;
+            font-size: 1.5em;
+        }
+    }
+    
+}
+/***************** fin pages annonce ************************/
+
+

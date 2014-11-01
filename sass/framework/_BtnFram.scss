@@ -1,0 +1,109 @@
+/******************************* Variables *********************************/
+/******************************* Variables *********************************/
+
+$width-btn : 10%;
+
+$font-size-btn-lg : 1.3em;
+$width-btn-lg : 23%;
+
+$font-size-btn-small : 0.6em;
+$width-btn-small : 7%;
+
+$color-btn-blue: blue;
+$color-btn-red: #E0645C;
+$color-btn-green : #2DB6CF;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+/******************************* Fin Variables *********************************/
+/******************************* Fin Variables *********************************/
+
+
+  
+.btn{
+	border: 0 none;
+//	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.8em;
+	margin-bottom: 0;
+	margin-top: 10px;
+	//padding: 7px 10px;
+	text-transform: none;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	width: $width-btn;
+    text-align: center; 
+    
+    
+    @include border-radius(5px);
+    
+	&:hover{
+		background: none repeat scroll 0 0 #999999;
+	    color: #FFFFFF; 
+	}  
+
+	&:active{
+		box-shadow:inset 0 1px 1px rgba(255,255,255,0.2),
+		inset 0 1.5em 1em rgba(255,255,255,0.3);	
+	}
+}
+
+.btn-blue{
+	background-color:$color-btn-blue;
+
+	&:hover{
+		background: none repeat scroll 0 0  #444444;
+	    color: #FFFFFF;
+	}
+}
+
+.btn-green{
+	background: none repeat scroll 0 0 $color-btn-green;
+    color: #FFFFFF;
+
+    &:hover{
+		background: none repeat scroll 0 0  #444444;
+	    color: #FFFFFF;
+	}
+}
+
+.btn-red{
+	background: none repeat scroll 0 0 $color-btn-red;
+    color: #FFFFFF;
+
+    &:hover{
+		background: none repeat scroll 0 0 #999999;
+		color: #FFFFFF;
+	} 
+} 
+
+.btn-lg{
+	line-height:3em;
+	//padding:0 3.5em;
+	font-size: $font-size-btn-lg;
+    width:$width-btn-lg;
+    min-width: 6em;
+}
+
+.btn-small{
+	line-height:1.6em;
+	//padding:0em 1.1em;
+	font-size: $font-size-btn-small;  
+    width:$width-btn-small;
+    min-width: 4em;
+}
+
+.btn-lg-lg{
+	width:100%;
+    line-height: 2em;
+}
